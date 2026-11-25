@@ -27,7 +27,7 @@ jobs:
 
     steps:
       - name: Harden the runner (Audit all outbound calls)
-        uses: step-security/harden-runner@v2.22.1
+        uses: step-security/harden-runner@v2.23.0
         with:
           egress-policy: audit
 
@@ -44,12 +44,12 @@ jobs:
           cache: npm
 
       - name: Setup Python
-        uses: actions/setup-python@v7.0.0
+        uses: actions/setup-python@v7.1.0
         with:
           python-version: '3.x'
 
       - name: Setup Go
-        uses: actions/setup-go@v7.0.0
+        uses: actions/setup-go@v7.1.0
         with:
           go-version: stable
 
